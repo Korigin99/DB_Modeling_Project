@@ -24,13 +24,13 @@
 사고 관리 번호 :  trfacd_mngno
 교통사고 종류 : trfacd_type
 
-지역 구 테이블(테이블 이름) : local
-지역 번호 : lnum
-구 이름 :	lname
+지역 구 테이블(테이블 이름) : area
+지역 번호 : anum
+구 이름 :	aname
 
-지역별 교통사고 (테이블 이름) : local_trfacd
-지역 사고 번호 : ltnum
-지역 번호 : lnum
+지역별 교통사고 (테이블 이름) : area_trfacd
+지역 사고 번호 : atnum
+지역 번호 : anum
 동 이름 :	dong_name
 사고 지역 CCTV 여부 : cctv
 사고 지역 과속카메라 여부 : scamera
