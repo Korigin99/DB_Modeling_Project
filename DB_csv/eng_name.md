@@ -41,7 +41,7 @@
       지역 사고 번호 : atnum
       지역 번호 : anum
       동 이름 :	dong_name
-      사고 지역 CCTV 여부 : atcctv
+      사고지역 중앙 분리대 : atmiddle
       사고 지역 과속카메라 여부 : atcamera
       사고 지역 음주 단속 여부 : atbrtyCheck
       사고 관리 번호 : trfacd_mngno
