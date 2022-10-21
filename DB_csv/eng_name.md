@@ -10,10 +10,10 @@
 
 - 교통사고 정보 (테이블 이름) : trfacd_info
       
-      교통사고 관리 번호 : trfacd_mngno
+      사고 관리 번호 : trfacd_mngno
       교통사고 날짜 :  trfacd_date
-      교통사고 종류 : trfacd_type
       교통사고 발생지 : trfacd_loc
+      교통사고 종류 : trfacd_type
 
 - 교통사고 당사자 (테이블 이름) : trfacd_prt
 
@@ -33,16 +33,17 @@
 
 - 지역 구 테이블(테이블 이름) : area
 
-      지역 번호 : anum
+      지역 구 번호 : anum
       구 이름 :	aname
 
-- 지역별 교통사고 (테이블 이름) : area_trfacd
+- 지역 구별 교통사고 (테이블 이름) : area_trfacd
 
       지역 사고 번호 : atnum
-      지역 번호 : anum
-      동 이름 :	dong_name
+      지역 구 번호 : anum
+      사고지역 동 이름 : dong_name
       사고지역 중앙 분리대 : atmiddle
-      사고 지역 과속카메라 여부 : atcamera
-      사고 지역 음주 단속 여부 : atbrtyCheck
+      사고지역 과속카메라 여부 : atscamera
+      사고지역 신호위반 카메라 : atsvcamera
+      사고지역 음주 단속 여부 : atbrtyCheck
       사고 관리 번호 : trfacd_mngno
 
