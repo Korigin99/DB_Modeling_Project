@@ -18,7 +18,8 @@
 - 교통사고 당사자 (테이블 이름) : trfacd_prt
 
       당사자 번호 : pno
-      당사자 성별 : pname
+      당사자 이름 : pname
+      당사자 성별 : psex
       당사자 생년월일 : pbrth
       당사자 면허 유무 : pdriverl
       당사자 안전벨트 유무 : pbelt
