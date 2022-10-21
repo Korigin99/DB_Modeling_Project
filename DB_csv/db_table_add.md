@@ -55,3 +55,62 @@ FOREIGN KEY (trfacd_type) REFERENCES trfacd_status(trfacd_type) ON DELETE CASCAD
 )
 
 ```
+
+```sql
+CREATE TABLE trfacd_status (
+	trfacd_type varchar(30) comment '교통사고 종류' PRIMARY KEY,
+	injury int(4) COMMENT '부상',
+	dead int(4) COMMENT '사망'
+);
+
+DROP TABLE trfacd_status
+
+CREATE TABLE area (
+	anum varchar(30) comment '지역 구 번호' PRIMARY KEY,
+	aname varchar(30) comment '구 이름'
+	);
+
+
+CREATE TABLE trfacd_info(
+	 trfacd_mngno varchar(30) comment '사고 관리 번호' PRIMARY KEY,
+	 trfacd_date datetime comment '교통사고 날짜',
+	 trfacd_loc varchar(30) comment '교통사고 발생지',
+	 trfacd_type varchar(30) comment '교통사고 종류',
+	 FOREIGN KEY (trfacd_type) REFERENCES trfacd_status(trfacd_type) ON DELETE CASCADE
+);
+
+CREATE TABLE area_trfacd (
+	atnum varchar(30) comment '지역 사고 번호' PRIMARY KEY,
+	anum varchar(30) comment '지역 구 번호',
+	FOREIGN KEY (anum) REFERENCES area(anum) ON DELETE CASCADE,
+	dong_name varchar(30) comment ' 사고지역 동 이름',
+	atmiddle varchar(30) comment '사고지역 중앙 분리대',
+	atscamera varchar(30) comment '사고지역 과속카메라',
+	atsvcamera varchar(30) comment '사고지역 신호위반 카메라',
+	atbrtyCheck varchar(30) comment '사고지역 음주 단속',
+	trfacd_mngno varchar(30) comment '사고 관리 번호',
+	FOREIGN KEY (trfacd_mngno) REFERENCES trfacd_info(trfacd_mngno) ON DELETE CASCADE
+	);
+
+DROP TABLE trfacd_status, trfacd_info, area
+DROP TABLE area_trfacd
+
+
+CREATE TABLE trfacd_prt (
+pno varchar(30) comment '당사자 번호' PRIMARY KEY,
+pname varchar(30) comment '당사자 이름',
+psex varchar(30) comment '당사자 성별',
+pbrth varchar(30) comment '당사자 생년월일',
+pdriverl varchar(30) comment '당사자 면허 유무',
+psBelt varchar(30) comment '당사자 안전벨트 유무',
+pdriking varchar(30) comment '당사자 음주 여부',
+pcasualty varchar(30) comment '당사자 부상/사망 유무',
+trfacd_type varchar(30) comment '교통사고 종류',
+FOREIGN KEY (trfacd_type) REFERENCES trfacd_status(trfacd_type) ON DELETE CASCADE,
+trfacd_date datetime comment '교통사고 날짜',
+trfacd_speed int(4) comment '교통사고 직전 속도',
+trfacd_mngno varchar(30) comment '사고 관리 번호',
+FOREIGN KEY (trfacd_mngno) REFERENCES trfacd_info(trfacd_mngno) ON DELETE CASCADE
+)
+
+```
