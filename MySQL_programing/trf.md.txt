@@ -1,0 +1,8 @@
+-- 안전벨트를 미착용한 사람 부상/사망 여부 확인하는 쿼리
+select pname, pcasualty  from trfacd_prt where pbelt = "n"
+
+-- 음주운전 사고 발생지의 음주단속 여부를 확인하는 커리
+select t.trfacd_loc,a.atbrtyCheck from area_trfacd as a
+inner join trfacd_info as t
+on a.trfacd_mngno = t.trfacd_mngno
+where trfacd_type = "음주운전"
