@@ -35,7 +35,7 @@
 총 5개의 테이블로 구성했습니다.
 
 <div align = center>
-<img src="DB_modeling/image/DB_TABLE_modeling.jpg" width="650">
+<img src="IMAGE/DB_TABLE_modeling.JPG" width="650">
 </div>
 <br>
 
