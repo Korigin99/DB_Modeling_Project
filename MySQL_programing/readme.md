@@ -55,7 +55,15 @@ HAVING  count(a.dong_name) > 20
 ```
 <img src="../IMAGE/m7.png">
 
+8. 월별 교통사고 발생 수 
 
+```sql
+SELECT date_format(ti.trfacd_date,'%m') AS '월' ,count(tp.pno) AS '교통사고 발생 수'
+FROM trfacd_info AS ti 
+INNER JOIN trfacd_prt AS tp 
+ON ti.trfacd_mngno = tp.trfacd_mngno GROUP BY date_format(trfacd_date,'%m')
+```
+<img src="../IMAGE/m8.png">
 
 
 
