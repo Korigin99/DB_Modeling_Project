@@ -4,7 +4,6 @@
 
 
 
-
 1. 전체 교통사고 부상/사망 비율
 ```sql
 SELECT format(sum(injury)/sum(injury+dead)*100,1) AS '부상자 비율', 
