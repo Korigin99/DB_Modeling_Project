@@ -35,12 +35,13 @@
 총 5개의 테이블로 구성했습니다.
 
 <div align = center>
-<img src="IMAGE/DB_TABLE_modeling.JPG" width="650">
+<img src="IMAGE/DB_erd.JPG">
 </div>
 <br>
 
 ## MySQL 프로그래밍
 
+<a href="MySQL_programing/query.md">쿼리 보러가기</a> 
 
 ## 소감
 
