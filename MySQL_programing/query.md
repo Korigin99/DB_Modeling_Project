@@ -122,3 +122,13 @@ GROUP BY a.dong_name
 HAVING  count(a.dong_name) > 20
 ```
 <img src="../IMAGE/m7.png">
+
+11. 교통사고 종류별 교통사고 건수
+```sql
+SELECT ti.trfacd_type "교통사고 종류", count(*) "교통사고 건수"
+FROM trfacd_status AS ts
+INNER JOIN trfacd_info ti
+ON ts.trfacd_type = ti.trfacd_type
+GROUP BY ti.trfacd_type
+```
+<img src="../IMAGE/k3.jpg">
