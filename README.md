@@ -1,5 +1,7 @@
 # DB_Modeling_Project - 대전 광역시 교통사고 분석 시스템
 
+<img src="representative_image.png">
+
 ## 목차
 
 1. 프로젝트 소개
