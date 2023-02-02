@@ -42,11 +42,6 @@
 ## MySQL 프로그래밍
 
 <a href="MySQL_programing/query.md">쿼리 보러가기</a> 
-
-## 소감
-
-
-    
     
 
 
