@@ -10,7 +10,7 @@ SELECT format(sum(injury)/sum(injury+dead)*100,1) AS '부상자 비율',
 format(sum(dead)/sum(injury+dead)*100,1) AS '사망자 비율' 
 FROM trfacd_status
 ```
-<img src="../IMAGE/g1.jpg">
+<img src="../IMAGE/g1.JPG">
 
 
 2. 각 교통사고 별 부상/사망 비율
@@ -20,7 +20,7 @@ format(sum(injury)/sum(injury+dead)*100,1) AS '부상자 비율',
 format(sum(dead)/sum(injury+dead)*100,1) AS '사망자 비율'
 FROM trfacd_status GROUP BY trfacd_type
 ```
-<img src="../IMAGE/g2.jpg">
+<img src="../IMAGE/g2.JPG">
 
 3. 전체 교통사고 성비율
 ```sql
