@@ -76,7 +76,7 @@ ON a.trfacd_mngno = ti.trfacd_mngno
 WHERE ti.trfacd_type = "음주운전" AND a.atbrtyCheck = "n"
 GROUP BY a.dong_name 
 ```
-<img src="../IMAGE/k1.jpg">
+<img src="../IMAGE/k1.JPG">
 <img src="../IMAGE/k2.jpg">
 
 6. 중앙선 침범 사고 발생지의 중앙 분리대 여부 확인
